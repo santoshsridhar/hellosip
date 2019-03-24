@@ -20,13 +20,13 @@ sleep 10
 
 echo "Callee registration is Successful proceed to prepare callee listen to incominng connection"
 
-./CALLEE
+./CALLEE.sh
 
 sleep 10
 
 echo "Caller calls in and starts 1-1 call and terminates"
 
-./CALLER
+./CALLER.sh
 
 echo " call was successful"
 
