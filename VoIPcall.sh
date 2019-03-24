@@ -24,7 +24,7 @@ echo "Callee registration is Successful proceed to prepare callee listen to inco
 
 sleep 10
 
-echo "Caller registration is Successful; Proceed to 1-1 call"
+echo "Caller calls in and starts 1-1 call and terminates"
 
 ./CALLER
 
