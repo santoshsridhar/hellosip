@@ -2,8 +2,8 @@
 
 Preconditoins: Make sure the Endpoints are created on a SIP server
 
-"Callee.sh" liestens to "INVITE" and "Caller.sh" Dials in and 1-1 calls is established and terminated.
+"CALLEE.sh" liestens to "INVITE" and "CALLER.sh" Dials in and 1-1 calls is established and terminated.
 
 PCMU is used as the audio codec for the call
 
-Make sure All files are kept in a single dorectory before starting the script
+Make sure All files are kept in a single directory before starting the script
