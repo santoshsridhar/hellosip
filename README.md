@@ -7,3 +7,5 @@ Preconditoins: Make sure the Endpoints are created on a SIP server
 PCMU is used as the audio codec for the call
 
 Make sure All files are kept in a single directory before starting the script
+
+SIP messages sample is also provided for reference on one of the endpoints
