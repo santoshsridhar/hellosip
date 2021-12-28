@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "[field0].dtd">
+
+<scenario name="registration">
+
+<send retrans="500">
+<![CDATA[
+REGISTER sip:phone.plivo.com SIP/2.0
+Via: SIP/2.0/UDP [local_ip]:[local_port];branch=[branch]
+Max-Forwards: 70
+From: <sip:[field0]@[field1]>;tag=[call_number]
+To: <sip:[field0]@[field1]>
+Call-ID: reg///[call_id]
+CSeq: 7 REGISTER
+Contact: <sip:[field0]@[local_ip]:[local_port]>
+Expires: 3600
+Content-Length: 0
+User-Agent: [field0]
+]]>
+</send>
+
+<recv response="100" optional="true">
+</recv>
+
+<recv response="401" auth="true" rtd="true">
+</recv>
+
+<send retrans="500">
+<![CDATA[
+REGISTER sip:phone.plivo.com SIP/2.0
+Via: SIP/2.0/UDP [local_ip]:[local_port];branch=[branch]
+Max-Forwards: 70
+From: <sip:[field0]@[field1]>;tag=[call_number]
+To: <sip:[field0]@[field1]>
+Call-ID: reg///[call_id]
+CSeq: 8 REGISTER
+Contact: <sip:[field0]@[local_ip]:[local_port]>
+Expires: 3600
+Content-Length: 0
+User-Agent: [field0]
+[field2]
+]]>
+</send>
+
+<recv response="100" optional="true">
+</recv>
+
+<recv response="200">
+</recv>
+
+<ResponseTimeRepartition value="10, 20"/>
+<CallLengthRepartition value="10"/>
+</scenario>

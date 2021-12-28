@@ -1,0 +1,217 @@
+----------------------------------------------- 2019-03-28 14:48:43.205279
+UDP message received [1316] bytes :
+
+INVITE sip:san5754950069156337164788281@13.126.158.193:5068;transport=UDP SIP/2.0
+Record-Route: <sip:52.9.254.127;lr=on;ftag=tp3XKe99F63mg;did=55a.7fb2>
+Via: SIP/2.0/UDP 52.9.254.127:5060;branch=z9hG4bKd5b3.3741178c79b08d22ca90b94af1db17f8.0
+Via: SIP/2.0/UDP 52.220.63.158:5080;received=52.220.63.158;rport=5080;branch=z9hG4bKNDF3yU2ggv9ym
+Max-Forwards: 40
+From: "nas" <sip:+15020946451464@52.220.63.158>;tag=tp3XKe99F63mg
+To: <sip:san5754950069156337164788281@52.9.254.127;transport=udp>
+Call-ID: 9502ff82-5168-11e9-82bc-d547804e5fdf
+CSeq: 2338469 INVITE
+Contact: <sip:mod_sofia@52.220.63.158:5080>
+User-Agent: Plivo
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REFER, NOTIFY
+Supported: path, replaces
+Allow-Events: talk, hold, conference, refer
+Privacy: none
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 337
+P-hint: inbound
+P-Asserted-Identity: "nas" <sip:+15020946451464@52.220.63.158>
+P-hint: outbound
+
+v=0
+o=FreeSWITCH 1553757660 1553757661 IN IP4 52.220.63.158
+s=FreeSWITCH
+c=IN IP4 52.220.63.158
+t=0 0
+m=audio 26862 RTP/AVP 0 8 102 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:102 SPEEX/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=rtcp:26863 IN IP4 52.220.63.158
+a=silenceSupp:off - - - -
+a=ptime:20
+
+----------------------------------------------- 2019-03-28 14:48:43.205479
+UDP message sent (484 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 52.9.254.127:5060;branch=z9hG4bKd5b3.3741178c79b08d22ca90b94af1db17f8.0, SIP/2.0/UDP 52.220.63.158:5080;received=52.220.63.158;rport=5080;branch=z9hG4bKNDF3yU2ggv9ym
+From: "nas" <sip:+15020946451464@52.220.63.158>;tag=tp3XKe99F63mg
+To: <sip:san5754950069156337164788281@52.9.254.127;transport=udp>;tag=1
+Call-ID: 9502ff82-5168-11e9-82bc-d547804e5fdf
+CSeq: 2338469 INVITE
+Contact: <sip:172.31.31.223:5068;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-28 14:48:43.216270
+UDP message sent (651 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 52.9.254.127:5060;branch=z9hG4bKd5b3.3741178c79b08d22ca90b94af1db17f8.0, SIP/2.0/UDP 52.220.63.158:5080;received=52.220.63.158;rport=5080;branch=z9hG4bKNDF3yU2ggv9ym
+From: "nas" <sip:+15020946451464@52.220.63.158>;tag=tp3XKe99F63mg
+To: <sip:san5754950069156337164788281@52.9.254.127;transport=udp>;tag=1
+Call-ID: 9502ff82-5168-11e9-82bc-d547804e5fdf
+CSeq: 2338469 INVITE
+Contact: <sip:172.31.31.223:5068;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   137
+
+v=0
+o=user1 53655765 2353687637 IN IP4 172.31.31.223
+s=-
+c=IN IP4 172.31.31.223
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2019-03-28 14:48:43.449386
+UDP message received [412] bytes :
+
+ACK sip:13.126.158.193:5068;transport=UDP SIP/2.0
+Via: SIP/2.0/UDP 52.220.63.158:5080;rport;branch=z9hG4bKr8tD4cNU7pcQQ
+Max-Forwards: 70
+From: "nas" <sip:+15020946451464@52.220.63.158>;tag=tp3XKe99F63mg
+To: <sip:san5754950069156337164788281@52.9.254.127;transport=udp>;tag=1
+Call-ID: 9502ff82-5168-11e9-82bc-d547804e5fdf
+CSeq: 2338469 ACK
+Contact: <sip:mod_sofia@52.220.63.158:5080>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-28 14:48:45.717822
+UDP message received [253] bytes :
+
+OPTIONS sip:13.126.158.193:5068 SIP/2.0
+Via: SIP/2.0/UDP 10.2.6.10:5060;branch=z9hG4bK4440522
+From: sip:keepalive@plivo.com;tag=70062b44
+To: sip:13.126.158.193:5068
+Call-ID: 745d4006-48b938ff-46786a3@10.2.6.10
+CSeq: 1 OPTIONS
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2019-03-28 14:48:53.861370
+UDP message received [252] bytes :
+
+OPTIONS sip:13.126.158.193:5068 SIP/2.0
+Via: SIP/2.0/UDP 10.2.5.10:5060;branch=z9hG4bK6149427
+From: sip:keepalive@plivo.com;tag=8aec97b
+To: sip:13.126.158.193:5068
+Call-ID: 54ef1091-1d6130ae-288d306@10.2.5.10
+CSeq: 1 OPTIONS
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2019-03-28 14:49:15.492835
+UDP message received [540] bytes :
+
+BYE sip:13.126.158.193:5068;transport=UDP SIP/2.0
+Via: SIP/2.0/UDP 52.220.63.158:5080;rport;branch=z9hG4bK7m3ZtBS4De7yj
+Max-Forwards: 70
+From: "nas" <sip:+15020946451464@52.220.63.158>;tag=tp3XKe99F63mg
+To: <sip:san5754950069156337164788281@52.9.254.127;transport=udp>;tag=1
+Call-ID: 9502ff82-5168-11e9-82bc-d547804e5fdf
+CSeq: 2338470 BYE
+User-Agent: Plivo
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REFER, NOTIFY
+Supported: path, replaces
+Reason: Q.850;cause=16;text="NORMAL_CLEARING"
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-28 14:49:15.492950
+UDP message sent (363 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 52.220.63.158:5080;rport;branch=z9hG4bK7m3ZtBS4De7yj
+From: "nas" <sip:+15020946451464@52.220.63.158>;tag=tp3XKe99F63mg
+To: <sip:san5754950069156337164788281@52.9.254.127;transport=udp>;tag=1
+Call-ID: 9502ff82-5168-11e9-82bc-d547804e5fdf
+CSeq: 2338470 BYE
+Contact: <sip:172.31.31.223:5068;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-28 14:49:15.727469
+UDP message received [253] bytes :
+
+OPTIONS sip:13.126.158.193:5068 SIP/2.0
+Via: SIP/2.0/UDP 10.2.6.10:5060;branch=z9hG4bK9914809
+From: sip:keepalive@plivo.com;tag=70062d66
+To: sip:13.126.158.193:5068
+Call-ID: 745d4006-48b93b21-46786c1@10.2.6.10
+CSeq: 1 OPTIONS
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2019-03-28 14:49:16.493058
+UDP message received [540] bytes :
+
+BYE sip:13.126.158.193:5068;transport=UDP SIP/2.0
+Via: SIP/2.0/UDP 52.220.63.158:5080;rport;branch=z9hG4bK7m3ZtBS4De7yj
+Max-Forwards: 70
+From: "nas" <sip:+15020946451464@52.220.63.158>;tag=tp3XKe99F63mg
+To: <sip:san5754950069156337164788281@52.9.254.127;transport=udp>;tag=1
+Call-ID: 9502ff82-5168-11e9-82bc-d547804e5fdf
+CSeq: 2338470 BYE
+User-Agent: Plivo
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REFER, NOTIFY
+Supported: path, replaces
+Reason: Q.850;cause=16;text="NORMAL_CLEARING"
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-28 14:49:16.493168
+UDP message sent (363 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 52.220.63.158:5080;rport;branch=z9hG4bK7m3ZtBS4De7yj
+From: "nas" <sip:+15020946451464@52.220.63.158>;tag=tp3XKe99F63mg
+To: <sip:san5754950069156337164788281@52.9.254.127;transport=udp>;tag=1
+Call-ID: 9502ff82-5168-11e9-82bc-d547804e5fdf
+CSeq: 2338470 BYE
+Contact: <sip:172.31.31.223:5068;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-28 14:49:18.492711
+UDP message received [540] bytes :
+
+BYE sip:13.126.158.193:5068;transport=UDP SIP/2.0
+Via: SIP/2.0/UDP 52.220.63.158:5080;rport;branch=z9hG4bK7m3ZtBS4De7yj
+Max-Forwards: 70
+From: "nas" <sip:+15020946451464@52.220.63.158>;tag=tp3XKe99F63mg
+To: <sip:san5754950069156337164788281@52.9.254.127;transport=udp>;tag=1
+Call-ID: 9502ff82-5168-11e9-82bc-d547804e5fdf
+CSeq: 2338470 BYE
+User-Agent: Plivo
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REFER, NOTIFY
+Supported: path, replaces
+Reason: Q.850;cause=16;text="NORMAL_CLEARING"
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-28 14:49:18.492809
+UDP message sent (363 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 52.220.63.158:5080;rport;branch=z9hG4bK7m3ZtBS4De7yj
+From: "nas" <sip:+15020946451464@52.220.63.158>;tag=tp3XKe99F63mg
+To: <sip:san5754950069156337164788281@52.9.254.127;transport=udp>;tag=1
+Call-ID: 9502ff82-5168-11e9-82bc-d547804e5fdf
+CSeq: 2338470 BYE
+Contact: <sip:172.31.31.223:5068;transport=UDP>
+Content-Length: 0
+
+
